@@ -143,9 +143,9 @@ footer {
   .header__background {
     background: url("../img/backgroundHall1-m.webp") no-repeat center / cover;
   }
-}
 
-@media (min-width: 480px) and (max-width: 949px) {
+  @media (min-width: 480px) and (max-width: 949px) {
+    /** for 4 buttons with reserve
   .nav {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -153,59 +153,99 @@ footer {
     justify-content: center;
     justify-items: center;
     margin-top: 67vh;
+  }**/
+    h1 {
+      font-size: 4em;
+    }
   }
-  h1 {
-    font-size: 4em;
+
+  @media (max-width: 479px) {
+    .header__address {
+      font-size: 1em;
+    }
+    .header__contact {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: 1em;
+    }
+    .header__logo {
+      width: 20vw;
+      height: 20vh;
+    }
+    .nav {
+      display: grid;
+      row-gap: 0.7em;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 67vh;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    .nav__link a {
+      font-size: 1.2em;
+    }
+    .nav__link a:hover,
+    .nav__link a:active {
+      font-size: 1.3em;
+      color: rgb(203, 173, 98);
+      padding: 0.2em;
+      border-bottom: 2px solid rgb(203, 173, 98);
+      transition: 0.5s;
+    }
   }
+}
+
+/*lunch page*/
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 1.5em 0 0.3em 0;
+}
+
+dl {
+  width: 100%;
+}
+
+.lunch__time {
+  text-align: center;
+}
+
+.lunch__wrapper {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.lunch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30vw;
 }
 
 @media (max-width: 479px) {
-  .header__address {
-    font-size: 1em;
-  }
-  .header__contact {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    gap: 1em;
-  }
-  .header__logo {
-    width: 20vw;
-    height: 20vh;
-  }
-
-  .nav {
-    display: grid;
-    row-gap: 0.7em;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 67vh;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  .nav__link a {
-    font-size: 1.2em;
-  }
-  .nav__link a:hover,
-  .nav__link a:active {
-    font-size: 1.3em;
-    color: rgb(203, 173, 98);
-    padding: 0.2em;
-    border-bottom: 2px solid rgb(203, 173, 98);
-    transition: 0.5s;
+  .lunch {
+    padding: 0;
   }
 }
 
-/* hookah page */
-.container {
-  background: rgb(83, 63, 174);
-  background: linear-gradient(
-    40deg,
-    rgba(83, 63, 174, 1) 0%,
-    rgba(65, 31, 112, 1) 45%,
-    rgba(105, 71, 193, 1) 100%
-  );
-  width: 100vw;
-  height: 100vh;
+.lunch__title {
+  color: #000;
+  text-transform: uppercase;
+  background-color: rgb(203, 173, 98);
+  padding: 0.5vh 0;
+  margin: 1.5vh;
+}
+
+.lunch__title > span {
+  text-transform: none;
+}
+
+.lunch__item {
+  font-size: 1.2em;
 }

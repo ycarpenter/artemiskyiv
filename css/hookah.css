@@ -9,12 +9,12 @@ body {
   width: 100%;
   height: max-content;
   background-color: #191918;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(203, 173, 98);
   padding-bottom: 2em;
 }
 .header__hookah {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   margin: 1.5em 0 0.3em 0;
 }
@@ -47,4 +47,17 @@ body {
 
 .menu__item span {
   float: right;
+}
+
+@media (max-width: 479px) {
+  .menu {
+    max-width: 100vw;
+  }
+  .menu__title {
+    font-size: 1em;
+    width: 80vw;
+  }
+  .menu__item {
+    font-size: 1em;
+  }
 }

@@ -99,7 +99,7 @@ body {
   font-size: 1.8em;
   color: rgb(203, 173, 98);
   text-transform: uppercase;
-  background-color: #191918;
+  /* background-color: #191918; */
   border-bottom: 2px solid rgb(203, 173, 98);
   transition: 0.5s;
 }
@@ -123,6 +123,7 @@ footer {
 }
 
 .social__container {
+  margin-top: 2em;
   bottom: 2em;
   width: 100%;
   position: absolute;
@@ -207,10 +208,9 @@ footer {
       font-size: 3em;
     }
     .nav__link {
-      width: 9em;
+      width: 10em;
       background-color: #191918;
       text-align: center;
-      padding: 0.2em;
     }
 
     .nav__link a {

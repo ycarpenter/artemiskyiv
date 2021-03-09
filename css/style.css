@@ -6,42 +6,33 @@
 }
 
 body {
-  font-family: 'Roboto',
-    sans-serif;
   background-color: #191918;
   font-size: 16px;
   color: rgb(203, 173, 98);
 }
 
-body a {
-  color: rgb(203, 173, 98);
-}
-
-.header__background {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/backgroundHall1.webp") no-repeat center / cover;
-  opacity: 0.3;
-  position: absolute;
-  z-index: -1;
-}
-
 .header__container {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(5, minmax(auto, 1fr));
-  place-items: center;
-  text-align: center;
-  column-gap: 3vh;
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
 }
 
 .header__contact {
-  grid-column: 1 / span 5;
   display: flex;
-  column-gap: 30vw;
-  font-size: 1.5rem;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__contact a {
+  /* position: absolute; */
+  color: rgb(203, 173, 98);
+  font-size: 1.3em;
+}
+
+.header__contact-item {
+  text-align: center;
 }
 
 .header__contact-item i {
@@ -53,62 +44,93 @@ body a {
 }
 
 @keyframes contact {
-  0% {
+  25% {
     font-size: 1.1em;
-    transform: translateY(1px);
+    transform: rotate(10deg);
   }
 
-  50% {
-    transform: translateY(-1px);
-  }
-
-  100% {
-    transform: translateY(1px);
+  75% {
+    transform: rotate(-10deg);
   }
 }
 
+.header__container>a {
+  display: flex;
+  justify-content: center;
+}
+
+.header__background {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/backgroundHall1.webp") no-repeat center / cover;
+  opacity: 0.3;
+  position: absolute;
+}
+
 .header__logo {
-  background: url("/img/icon-logo-gold.svg") no-repeat center / contain;
-  grid-area: 2 / 3;
+  margin-top: 15vh;
+  position: absolute;
   width: 15vw;
   height: 15vh;
 }
 
-.header__title {
-  grid-area: 3 / 1 / 3 / 6;
-  font-size: 4rem;
-}
-
 .nav {
-  grid-column: 1 / 6;
-  display: inline-flex;
-  column-gap: 4vw;
+  margin-top: 80vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .nav__link {
-  width: 17vw;
+  width: 13em;
   background-color: #191918;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  padding: 0.3rem;
+  padding: 0.2em;
 }
 
-.nav__link:hover,
-.nav__link:active {
-  font-size: 1.1rem;
+.nav__link a {
+  font-size: 1.7em;
+  color: rgb(203, 173, 98);
+  text-transform: uppercase;
+}
+
+.nav__link a:hover,
+.nav__link a:active {
+  font-size: 1.8em;
+  color: rgb(203, 173, 98);
+  text-transform: uppercase;
   border-bottom: 2px solid rgb(203, 173, 98);
   transition: 0.5s;
 }
 
+.header__title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  font-size: 5em;
+  color: rgb(203, 173, 98);
+}
 
 footer {
   background-color: rgb(203, 173, 98);
 }
 
 .social__container {
-  grid-row: 5;
-  grid-column: 3;
+  margin-top: 2em;
+  bottom: 2em;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__container i {
@@ -125,72 +147,82 @@ footer {
   border-bottom: 2px solid rgb(203, 173, 98);
 }
 
-/* .footer__contact {
+.footer__contact {
   display: grid;
   align-content: center;
   text-align: center;
-} */
+}
 
 .footer__contact a {
   color: #191918;
   line-height: 1.5em;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header__title {
-    font-size: 3rem;
+@media (min-width: 1200px) {}
+
+@media (min-width: 950px) and (max-width: 1199px) {}
+
+@media (min-width: 480px) and (max-width: 949px) {
+
+  /** for 4 buttons with reserve
+  .nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1.7em;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 67vh;
+  }**/
+  h1 {
+    font-size: 4em;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .header__contact {
-    grid-column: 1 / span 5;
-    display: flex;
-    column-gap: 20vw;
-    font-size: 1.3rem;
-  }
-
-  .nav__link {
-    width: 7.4rem;
-    font-size: 0.9rem;
-  }
-
-  .header__title {
-    font-size: 3rem;
-  }
-
-  .social__container {
-    grid-area: 5 / 2 / 5 / 5;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header__background {
     width: 100%;
     height: 100vh;
     background: url("../img/backHall-m.webp") no-repeat center / cover;
     opacity: 0.3;
+    position: absolute;
+  }
+
+  .header__address {
+    font-size: 1em;
   }
 
   .header__contact {
-    display: inline-block;
-    row-gap: 2rem;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1em;
+  }
+
+  .header__logo {
+    width: 20vw;
+    height: 20vh;
   }
 
   .nav {
     display: grid;
-    row-gap: 0.4em;
+    row-gap: 0.7em;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 67vh;
   }
 
-  .header__title {
-    font-size: 1.5rem;
+  h1 {
+    font-size: 3em;
   }
 
   .nav__link {
-    font-size: 0.8rem;
-    width: 7rem;
+    width: 10em;
     background-color: #191918;
+    text-align: center;
+  }
+
+  .nav__link a {
+    font-size: 1.2em;
   }
 
   .nav__link a:hover,
@@ -200,10 +232,6 @@ footer {
     padding: 0.2em;
     border-bottom: 2px solid rgb(203, 173, 98);
     transition: 0.5s;
-  }
-
-  .social__container {
-    display: inline-flex;
   }
 }
 
@@ -238,7 +266,7 @@ dl {
   padding: 0 30vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .lunch {
     padding: 0;
   }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ1X3YH138"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EJ1X3YH138');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="У розпорядженні відвідувачів закладу лаунж-зона з контактною барною стойкою, просторий основний зал зі сценою, а також кальянний зал з великим диваном для компанії гостей.">
+  <title>ARTEMIS restaurant</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header" id="header">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo_white.png" alt="logo" class="logo__img" /></a>
+    </div>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__menu">
+        <li><a href="index.html" class="nav__link">головна</a>
+        </li>
+        <li><a href="#" class="nav__link">меню</a>
+        </li>
+        <li><a href="#lunch" class=" nav__link">бізнес-ланч</a>
+        </li>
+        <li><a href="#" class="nav__link">кальяни</a>
+        </li>
+        <li><a href="#reserved" class="nav__link">резерв</a>
+        </li>
+        <!-- <li><a href="#" class="nav__link">контакти</a>
+        </li> -->
+      </ul>
+    </nav>
+    <button class="nav__burger" id="navBtn">
+      <img src="img/icons8-menu-64.png" alt="click to open navigation menu"></button>
+
+  </header>
+
+  <main>
+    <section class="section main">
+
+      <h1>ARTEMIS restaurant</h1>
+
+      <div class="main__contact">
+        <a href="https://goo.gl/maps/p9fbuU1kuRXdNE6r8" class="contact__link" target="_blank" rel="noopener">вул.
+          Саксаганського,
+          129а</a>
+        <a href="tel:+380979997539" class="contact__link">
+          097 999 7539</a>
+      </div>
+
+      <div class="button__wrapper">
+        <button class="button__menu">Переглянути меню</button>
+        <button class="button__reserved">Забронювати стіл</button>
+      </div>
+
+      <div class="social__container">
+        <a class="social__link" href="https://www.facebook.com/artemisbarkyiv" target="_blank" rel="noopener">
+          <img src="img/fb.png" alt="link to facebook page artemis" class="social__icon" width="40em">
+        </a>
+        <a class="social__link" href="https://www.instagram.com/artemiskyiv/" target="_blank" rel="noopener">
+          <img src="img/insta.png" alt="link to instagram page artemis" class="social__icon" width="40em">
+        </a>
+        <a class="social__link" href="https://vm.tiktok.com/ZSWNdUNR/" target="_blank" rel="noopener">
+          <img src="img/tk.png" alt="link to tiktok page artemis" class="social__icon" width="40em">
+        </a>
+        <a class="social__link" href="https://goo.gl/maps/p9fbuU1kuRXdNE6r8" target="_blank" rel="noopener">
+          <img src="img/google.png" alt="link to tiktok page artemis" class="social__icon" width="40em">
+        </a>
+      </div>
+    </section>
+
+    <section class="section lunch" id="lunch">
+      <h2>Бізнес ланч
+        <span class="lunch__time">з 12:00 до 16:00</span>
+        <span class="small__border"></span>
+      </h2>
+
+      <div class="lunch__option">На вибір: дві або три страви та напій</div>
+      <div class="lunch__wrapper">
+        <dl class="dishes">
+          <dt class="dishes__header">основна страва
+            <span class="dishes__weight">200г</span>
+          </dt>
+          <dd class="dishes__price">47</dd>
+          <dd class="dishes__title">Картопляне пюре та жульєн з курячим філе</dd>
+          <dd class="dishes__title">Кус Кус з овочами</dd>
+        </dl>
+
+        <dl class="dishes">
+          <dt class="dishes__header">суп
+            <span class="dishes__weight">200г</span>
+          </dt>
+          <dd class="dishes__price">47</dd>
+          <dd class="dishes__title">Солянка м'ясна</dd>
+          <dd class="dishes__title">Крем-суп з грибами</dd>
+        </dl>
+
+        <dl class="dishes">
+          <dt class="dishes__header">салат
+            <span class="dishes__weight">150г</span>
+          </dt>
+          <dd class="dishes__price">39</dd>
+          <dd class="dishes__title">Салат Майже Цезар</dd>
+          <dd class="dishes__title">Салат з курячою печінкою</dd>
+        </dl>
+
+        <dl class="dishes">
+          <dt class="dishes__header">напій
+            <span class="dishes__weight">200мл</span>
+          </dt>
+          <dd class="dishes__price">7</dd>
+          <dd class="dishes__title">Узвар / Каркаде / Чай</dd>
+        </dl>
+      </div>
+
+    </section>
+
+    <section class="section reserved">
+      <form action="form.php" method="POST" class="reserved__form" id="reserved" name="EmeilForm" autocomplete="off">
+        <h2>Бронювання столика</h2>
+        <p>
+          <label for="date"></label>
+          <input type="date" name="date" id="date" min="2021-04-09" max="2021-12-31" class="reservaionInput"
+            placeholder="Дата" required>
+        </p>
+        <p>
+          <label for="time"></label>
+          <input type="time" name="time" id="time" class="reservationInput" placeholder="Час" required>
+        </p>
+        <p>
+          <label for="person"></label>
+          <input type="number" name="person" id="person" min="1" max="30" class="reservationInput"
+            placeholder="К-сть гостей" required>
+        </p>
+        <p>
+          <label for="firstName"></label>
+          <input type="text" name="firstName" class="reservaionInput" placeholder="Ім'я та Прізвище" required>
+        </p>
+        <p>
+          <label for="phone"></label>
+          <input type="tel" name="phone" id="phone" class="reservaionInput" placeholder="+380XXXXXXXXX"
+            title="Введіть номер телефону у форматі +380XXXXXXXXX"
+            pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}{0,1}\d{2}{0,1}\d{2}" required>
+        </p>
+        <p>
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="reservationInput">
+        </p>
+
+        <button type="submit" value="submit" class="button__reserved">Забронювати!</button>
+
+      </form>
+
+      <p>Пн - Пт: <b>12:00 - 23:00</b><span class="reserved__desc">Сб - Нд:<b> 15:00 - 23:00</b></span> Номер телефону:
+        <a href="tel:+380979997539">
+          097 999 7539</a></p>
+
+      </srction>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contact">
+      <a href="tel:+380979997539">097 999 7539</a>
+      <a href="mailto:marketingartemis4@gmail.com">artemisrestaurantbar@gmail.com</a>
+      <a href="#header">2020 - ARTEMIS restaurant</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

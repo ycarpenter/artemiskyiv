@@ -264,25 +264,22 @@ input {
   color: rgb(153, 147, 147);
 }
 
-.reserved__desc {
-  margin: 0 3vw
-}
 
 /* section book a table end */
 
 /* footer */
 
-.footer {
-  margin-top: 4vh;
+.footer__contact {
+  margin: 4vh 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer__contact a {
-  display: inline-block;
-  padding: 2vh 5vw;
-
+  display: block;
+  text-align: center;
 }
 
 /* footer end */
@@ -312,6 +309,11 @@ input {
   .lunch {
     max-width: 45vw;
     margin: 1rem auto;
+  }
+
+  .reserved__desc {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -343,8 +345,9 @@ input {
   .nav__burger {
     display: block;
     cursor: pointer;
-    margin-left: auto;
     z-index: 1;
+    position: fixed;
+    right: 1vw;
     background: transparent;
     border-radius: 50%;
   }

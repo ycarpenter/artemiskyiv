@@ -89,7 +89,7 @@
     </section>
 
     <section class="section lunch" id="lunch">
-      <h2>Бізнес ланч
+      <h2 class="section__title">Бізнес ланч
         <span class="lunch__time">з 12:00 до 16:00</span>
         <span class="small__border"></span>
       </h2>
@@ -136,7 +136,7 @@
 
     <section class="section reserved">
       <form action="form.php" method="POST" class="reserved__form" id="reserved" name="EmeilForm" autocomplete="off">
-        <h2>Бронювання столика</h2>
+        <h2 class="section__title">Бронювання столика</h2>
         <p>
           <label for="date"></label>
           <input type="date" name="date" id="date" min="2021-04-09" max="2021-12-31" class="reservaionInput"
@@ -180,7 +180,39 @@
 
       <!-- modal reserved -->
 
-      </srction>
+    </section>
+
+    <section class="section menu">
+      <h2 class="section__title">наше меню
+        <span class="small__border"></span>
+      </h2>
+
+      <!-- filter buttons -->
+      <div class="menu__buttons">
+        <!-- <button class="buttons__filter" type="button" data-id="all">Усе</button>
+        <button class="buttons__filter" type="button" data-id="breakfast">Сніданки</button>
+        <button class="buttons__filter" type="button" data-id="salad">Салати</button>
+        <button class="buttons__filter" type="button" data-id="main-dishes">Основні страви</button> -->
+      </div>
+      <!-- menu item -->
+      <div class="section__center">
+        <!-- single item -->
+        <!-- <article class="menu__item">
+          <img src="/img-menu/menu-item.webp" alt="menu img" class="menu__img">
+          <div class="menu__info">
+            <header>
+              <h3 class="menu__title">Салат з авокадо</h3>
+              <h3 class="menu__price">120</h3>
+            </header>
+            <p class="menu__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sunt! Voluptatem inventore dolor
+              excepturi aperiam, laboriosam modi ab hic numquam.
+            </p>
+          </div>
+        </article> -->
+      </div>
+      <!-- end of single item -->
+    </section>
 
   </main>
 

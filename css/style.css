@@ -166,10 +166,11 @@ h1 {
 }
 
 
-h2 {
+.section__title {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .small__border {
@@ -252,7 +253,7 @@ h2 {
   background-color: rgb(24, 24, 29);
 }
 
-.reserved__form h2 {
+.reserved__form .section__title {
   margin-bottom: 4vh;
 }
 
@@ -264,8 +265,20 @@ input {
   color: rgb(153, 147, 147);
 }
 
-
 /* section book a table end */
+
+/* section menu */
+.menu__img {
+  width: 8vw;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.menu__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* end of section menu */
 
 /* footer */
 
@@ -360,7 +373,7 @@ input {
     display: block;
   }
 
-  h2 {
+  .section__title {
     font-size: 1.3rem;
   }
 

@@ -6,10 +6,17 @@ navButton.addEventListener('click', showMenu);
 function showMenu() {
   const burgerMenu = document.getElementById('nav');
   burgerMenu.classList.toggle('toggleMenu');
-}
+};
 
-// const menuBtn = document.querySelector('.button__menu');
-// menuBtn.addEventListener('click', function (event) => event)
+const menuBtn = document.querySelector('.button__menu');
+menuBtn.addEventListener('click', function () {
+  location.href = "#section-menu"
+});
+
+const reservedBtn = document.querySelector(".button__reserved");
+reservedBtn.addEventListener('click', function () {
+  location.href = "#reserved"
+});
 
 // item txt
 const menu = [{

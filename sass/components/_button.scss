@@ -47,3 +47,23 @@
     align-self: center;
   }
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 1000000;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &>img {
+    max-width: 10vw;
+  }
+}

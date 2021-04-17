@@ -86,20 +86,17 @@ body {
   width: minmax(100vw, 100vh);
   height: minmax(100vw, 100vh);
 }
-
 .section:nth-child(odd) {
-  background: black url("../img/hallBgBw.png") no-repeat center;
+  background: black url("../../img/hallBgBw.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
-
 .section__title {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 }
-
 @media (max-width: 47.99em) {
   .section__title {
     font-size: 1.5rem;
@@ -141,7 +138,6 @@ a {
   text-transform: uppercase;
   flex-wrap: wrap;
 }
-
 @media (max-width: 47.99em) {
   .nav__menu {
     align-items: center;
@@ -156,19 +152,13 @@ a {
     font-size: 1em;
   }
 }
-
-.nav__link:hover,
-.nav__link:focus,
-.nav__link:active {
+.nav__link:hover, .nav__link:focus, .nav__link:active {
   transition: all 0.5s;
   cursor: pointer;
 }
-
-.nav__link:hover,
-.nav__link:active {
+.nav__link:hover, .nav__link:active {
   color: #d7197e;
 }
-
 @media (min-width: 48em) {
   .nav__link::after {
     content: "|";
@@ -178,29 +168,22 @@ a {
     color: #d6197e;
   }
 }
-
 @media (min-width: 48em) {
   .nav__burger {
     display: none;
   }
 }
-
 @media (max-width: 47.99em) {
   .nav__burger {
-    display: block;
     cursor: pointer;
     z-index: 1;
     position: fixed;
     right: 1vw;
-    background: transparent;
-    border-radius: 50%;
   }
 }
-
-.nav__burger>img {
+.nav__burger > img {
   max-width: 9vw;
 }
-
 @media (max-width: 47.99em) {
   .nav {
     display: none;
@@ -221,7 +204,6 @@ a {
   align-items: center;
   flex-direction: column;
 }
-
 .reserved__form {
   width: 50vw;
   display: flex;
@@ -232,13 +214,11 @@ a {
   padding: 1.3rem 0;
   background-color: #17171c;
 }
-
 @media (max-width: 47.99em) {
   .reserved__form {
     width: 80vw;
   }
 }
-
 .reserved__desc {
   margin: 1rem 0;
 }
@@ -250,7 +230,6 @@ input {
   margin: 2vh 0;
   color: #9a9393;
 }
-
 @media (max-width: 47.99em) {
   input {
     min-width: 60vw;
@@ -260,19 +239,16 @@ input {
 .lunch {
   padding: 1rem;
 }
-
 @media (min-width: 48em) {
   .lunch {
     max-width: 55vw;
     margin: 1rem auto;
   }
 }
-
 .lunch__time {
   display: block;
   font-size: 1rem;
 }
-
 .lunch__option {
   margin: 1rem auto;
   font-weight: 600;
@@ -285,35 +261,28 @@ input {
   font-size: 0.9rem;
   padding: 0 0.4rem;
 }
-
-.dishes__header,
-.dishes__price {
+.dishes__header, .dishes__price {
   text-transform: uppercase;
   color: #d7197e;
   font-weight: 600;
 }
-
 .dishes__price {
   text-align: end;
   font-size: 2em;
 }
-
 .dishes__weight {
   display: block;
   font-size: 0.7rem;
   font-weight: 300;
 }
-
 .dishes__title {
   text-align: center;
   align-items: center;
   padding: 0.4rem;
 }
-
 .dishes__title:nth-child(2n) {
   border-left: 3px solid #d7197e;
 }
-
 .dishes:last-child :last-child {
   grid-column: span 2;
 }
@@ -321,33 +290,28 @@ input {
 .menu {
   margin: 1rem 5rem;
 }
-
 @media (max-width: 47.99em) {
   .menu {
     margin: 1rem 1rem;
   }
 }
-
 .menu__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .menu header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-items: unset;
 }
-
 .menu__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2.5rem;
 }
-
 @media (max-width: 47.99em) {
   .menu__container {
     display: grid;
@@ -355,39 +319,33 @@ input {
     column-gap: 0.5rem;
   }
 }
-
 .menu__title {
   font-size: 1rem;
   font-weight: 600;
 }
-
 @media (max-width: 47.99em) {
   .menu__title {
     font-size: 0.8rem;
     font-weight: 600;
   }
 }
-
 .menu__price {
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
   color: #d7197e;
 }
-
 @media (max-width: 47.99em) {
   .menu__price {
     font-size: 0.8rem;
     font-weight: 600;
   }
 }
-
 .menu__desc {
   font-size: 0.7rem;
   font-weight: 300;
   color: #9a9393;
 }
-
 .menu__item {
   margin-bottom: 0.4rem;
 }
@@ -406,53 +364,39 @@ input {
   background-color: #d7197e;
   width: fit-content;
 }
-
 .button__menu {
   margin-right: 1rem;
   background: transparent;
   border: 2px solid white;
 }
-
 .button__reserved {
   background-color: #d7197e;
   border: none;
 }
-
 .button__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-row: 8/9;
 }
-
-.button:hover,
-.button:focus,
-.button:active {
+.button:hover, .button:focus, .button:active {
   transition: all 0.5s;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: white;
   color: black;
 }
-
 .button__filter {
   margin: 0.35rem;
   background: transparent;
   border: 2px solid white;
 }
-
-.button__filter:hover,
-.button__filter:focus,
-.button__filter:active {
+.button__filter:hover, .button__filter:focus, .button__filter:active {
   transition: all 0.5s;
   cursor: pointer;
 }
-
-.button__filter:hover,
-.button__filter:focus,
-.button__filter:active {
+.button__filter:hover, .button__filter:focus, .button__filter:active {
   background: transparent;
   border: 2px solid #d7197e;
   color: #d7197e;
@@ -462,13 +406,30 @@ input {
   align-self: center;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 1000000;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+.scroll-top > img {
+  max-width: 10vw;
+}
+
 .main {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
   text-align: center;
   align-items: center;
 }
-
 .main__contact {
   font-size: inherit;
   font-weight: 600;
@@ -483,7 +444,6 @@ h1 {
   grid-row: 2/7;
   align-self: end;
 }
-
 @media (min-width: 48em) {
   h1 {
     font-size: 4em;
@@ -503,30 +463,20 @@ h1 {
 .social {
   grid-row: 11;
 }
-
 .social__link {
   height: fit-content;
   display: inline-block;
 }
-
-.social__link:hover,
-.social__link:active {
+.social__link:hover, .social__link:active {
   animation: bounce 1s;
 }
-
 @keyframes bounce {
-
-  0%,
-  20%,
-  60%,
-  100% {
+  0%, 20%, 60%, 100% {
     transform: translateY(0);
   }
-
   40% {
     transform: translateY(-1rem);
   }
-
   80% {
     transform: translateY(-0.5rem);
   }

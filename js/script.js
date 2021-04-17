@@ -361,3 +361,23 @@ function displayMenuButtons() {
     });
   });
 }
+
+// ===================
+// button back to top
+// ===================
+const scroll = document.getElementById('topBtn');
+
+window.addEventListener('scroll', function () {
+  scroll.classList.toggle("active", window.scrollY > 500);
+})
+
+scroll.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
+
+// ======================
+// end button back to top
+// ======================

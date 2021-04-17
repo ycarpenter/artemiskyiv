@@ -39,13 +39,10 @@
     }
 
     @include respond-to(medium) {
-      display: block;
       cursor: pointer;
       z-index: 1;
       position: fixed;
       right: 1vw;
-      background: transparent;
-      border-radius: 50%;
     }
 
     &>img {

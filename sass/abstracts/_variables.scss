@@ -1,0 +1,20 @@
+$fonts-stack: 'Source Sans Pro',
+sans-serif;
+
+$color-black: hsl(0, 0%, 0%);
+$color-white: hsl(0, 0%, 100%);
+$color-item: hsl(328, 79%, 47%);
+$color-burger: hsl(0, 0%, 8%);
+$bg-form: hsl(240, 9%, 10%);
+$black-lighter: hsl(0, 3%, 59%);
+
+// $border-color: $color-item;
+$text-color: $color-white;
+$bg-color: $color-black;
+$bg-burger: $color-burger;
+$input-placeholder: $black-lighter;
+
+
+$breakpoints: ('medium': (max-width: 47.99em),
+  'large': (min-width: 48em),
+  'huge': (min-width: 75em));

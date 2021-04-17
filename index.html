@@ -37,7 +37,7 @@
       <ul class="nav__menu">
         <li><a href="index.html" class="nav__link">головна</a>
         </li>
-        <li><a href="#" class="nav__link">меню</a>
+        <li><a href="#section-menu" class="nav__link">меню</a>
         </li>
         <li><a href="#lunch" class=" nav__link">бізнес-ланч</a>
         </li>
@@ -51,6 +51,7 @@
     </nav>
     <button class="nav__burger" id="navBtn">
       <img src="img/icons8-menu-64.png" alt="click to open navigation menu"></button>
+
 
   </header>
 
@@ -68,11 +69,11 @@
       </div>
 
       <div class="button__wrapper">
-        <button class="button__menu">Переглянути меню</button>
-        <button class="button__reserved">Забронювати стіл</button>
+        <button class="button button__menu">Переглянути меню</button>
+        <button class="button button__reserved">Забронювати стіл</button>
       </div>
 
-      <div class="social__container">
+      <div class="social">
         <a class="social__link" href="https://www.facebook.com/artemisbarkyiv" target="_blank" rel="noopener">
           <img src="img/fb.png" alt="link to facebook page artemis" class="social__icon" width="40em">
         </a>
@@ -166,7 +167,7 @@
           <input type="email" name="email" id="email" placeholder="E-mail" class="reservationInput">
         </p>
 
-        <button type="submit" value="submit" class="button__reserved">Забронювати!</button>
+        <button type="submit" value="submit" class="button button__reserved">Забронювати!</button>
 
       </form>
 
@@ -174,7 +175,7 @@
         <p>Пн - Пт: <b>12:00 - 23:00</b></p>
         <p>Сб - Нд:<b> 15:00 - 23:00</b></p>
         <p>Номер телефону:
-          <a href="tel:+380979997539">
+          <a href="tel:+380979997539" class="link">
             097 999 7539</a></p>
       </div>
 
@@ -182,25 +183,25 @@
 
     </section>
 
-    <section class="section menu">
+    <section class="section menu" id="section-menu">
       <h2 class="section__title">наше меню
         <span class="small__border"></span>
       </h2>
 
       <!-- filter buttons -->
       <div class="menu__buttons">
-        <!-- <button class="buttons__filter" type="button" data-id="all">Усе</button>
-        <button class="buttons__filter" type="button" data-id="breakfast">Сніданки</button>
-        <button class="buttons__filter" type="button" data-id="salad">Салати</button>
-        <button class="buttons__filter" type="button" data-id="main-dishes">Основні страви</button> -->
+        <!-- <button class="button button__filter" type="button" data-id="all">Усе</button>
+        <button class="button__filter" type="button" data-id="breakfast">Сніданки</button>
+        <button class="button__filter" type="button" data-id="salad">Салати</button>
+        <button class="button__filter" type="button" data-id="main-dishes">Основні страви</button> -->
       </div>
       <!-- menu item -->
-      <div class="section__center">
+      <div class="menu__container">
         <!-- single item -->
         <!-- <article class="menu__item">
           <img src="/img-menu/menu-item.webp" alt="menu img" class="menu__img">
           <div class="menu__info">
-            <header>
+            <header class="menu__header">
               <h3 class="menu__title">Салат з авокадо</h3>
               <h3 class="menu__price">120</h3>
             </header>

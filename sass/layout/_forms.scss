@@ -1,0 +1,34 @@
+.reserved {
+  @include align-center;
+  @include flex(space-around);
+  flex-direction: column;
+
+  &__form {
+    width: 50vw;
+    @include flex(center);
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1.3rem 0;
+    background-color: $bg-form;
+
+    @include respond-to(medium) {
+      width: 80vw;
+    }
+  }
+
+  &__desc {
+    margin: 1rem 0;
+  }
+}
+
+input {
+  background-color: $bg-color;
+  min-width: 39vw;
+  height: 4vh;
+  margin: 2vh 0;
+  color: $input-placeholder;
+
+  @include respond-to(medium) {
+    min-width: 60vw;
+  }
+}

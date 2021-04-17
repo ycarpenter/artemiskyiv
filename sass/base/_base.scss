@@ -1,0 +1,27 @@
+body {
+  font-family: $fonts-stack;
+  color: $text-color;
+  background-color: $bg-color;
+  width: 100vw;
+}
+
+.section {
+  @include size(minmax(100vw, 100vh));
+  @include cover-bg;
+
+  &__title {
+    @include text-size(2rem, 400);
+    text-align: center;
+    text-transform: capitalize;
+
+    @include respond-to('medium') {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+a {
+  display: inline-block;
+  color: $text-color;
+  padding: 0.2rem;
+}

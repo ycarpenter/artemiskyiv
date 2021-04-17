@@ -1,0 +1,61 @@
+.menu {
+  margin: 1rem 5rem;
+
+  @include respond-to(medium) {
+    margin: 1rem 1rem;
+  }
+
+  &__buttons {
+    @include flex(center);
+    flex-wrap: wrap;
+  }
+
+  header {
+    @include flex(space-between);
+    align-items: unset;
+  }
+
+  &__container {
+    @include display-grid-col(1fr 1fr);
+    column-gap: 2.5rem;
+
+    @include respond-to(medium) {
+      @include display-grid-col(1fr);
+
+      column-gap: 0.5rem;
+    }
+  }
+
+  &__title {
+    @include text-size(1rem, 600);
+
+    @include respond-to(medium) {
+      @include text-size(0.8rem, 600);
+    }
+  }
+
+  &__price {
+    @include text-size(1rem, 600);
+    white-space: nowrap;
+    color: $color-item;
+
+    @include respond-to(medium) {
+      @include text-size(0.8rem, 600);
+    }
+  }
+
+  &__desc {
+    @include text-size(0.7rem, 300);
+    color: $black-lighter;
+  }
+
+  &__item {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.divide-bottom {
+  border-bottom: 1px dashed $color-item;
+  flex-grow: 1;
+  margin: 0.11rem 0.3rem;
+}

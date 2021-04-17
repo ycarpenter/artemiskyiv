@@ -1,0 +1,39 @@
+.main {
+  @include display-grid-row(repeat(12, 1fr));
+  @include align-center;
+
+  &__contact {
+    $self: &;
+    @include text-size(inherit, 600);
+    grid-row: 7 / 8;
+  }
+}
+
+h1 {
+  @include text-size(3rem, 300);
+  @include align-center;
+  grid-row: 2 /7;
+  align-self: end;
+
+  @include respond-to(large) {
+    @include text-size(4em, 300)
+  }
+}
+
+.contact__link {
+  display: block;
+  color: $color-item;
+  width: fit-content;
+  @include align-center;
+  margin: auto;
+}
+
+.social {
+  grid-row: 11;
+
+  &__link {
+    height: fit-content;
+    display: inline-block;
+    @include animation;
+  }
+}

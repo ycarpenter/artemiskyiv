@@ -1,0 +1,65 @@
+.nav {
+  $self: &;
+
+  &__menu {
+    display: flex;
+    font-weight: 600;
+    gap: 1vw;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+
+    @include respond-to(medium) {
+      @include center;
+      @include size(100vw, 100vh);
+      position: fixed;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      background: $bg-burger;
+      font-size: 1em;
+    }
+  }
+
+  &__link {
+    @include hover-active;
+
+    &:hover,
+    &:active {
+      color: $color-item;
+    }
+
+    @include respond-to(large) {
+      @include divide;
+    }
+  }
+
+  &__burger {
+    @include respond-to(large) {
+      display: none;
+    }
+
+    @include respond-to(medium) {
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+      position: fixed;
+      right: 1vw;
+      background: transparent;
+      border-radius: 50%;
+    }
+
+    &>img {
+      max-width: 9vw;
+    }
+  }
+
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+.toggleMenu {
+  @include respond-to(medium) {
+    display: block;
+  }
+}

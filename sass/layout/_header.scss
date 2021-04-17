@@ -1,0 +1,12 @@
+.header {
+  @include flex(space-between);
+  position: absolute;
+  width: 100vw;
+  padding: 1.5vh;
+}
+
+.logo__img {
+  max-width: 7vw;
+  position: relative;
+  top: 0;
+}

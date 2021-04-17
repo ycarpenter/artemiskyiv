@@ -1,0 +1,6 @@
+.footer {
+  &__contact {
+    @include flex(space-around);
+    flex-wrap: wrap;
+  }
+}

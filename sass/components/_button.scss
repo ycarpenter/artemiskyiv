@@ -1,0 +1,49 @@
+.button {
+  @include text-size(0.9rem, 600);
+  padding: 0.3rem;
+  color: $text-color;
+  background-color: $color-item;
+  width: fit-content;
+
+  &__menu {
+    margin-right: 1rem;
+    @include border-button($text-color);
+  }
+
+  &__reserved {
+    background-color: $color-item;
+    border: none;
+  }
+
+  &__wrapper {
+    @include flex(center);
+    grid-row: 8 / 9;
+  }
+
+  @include hover-active;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &__filter {
+    margin: 0.35rem;
+    @include border-button($text-color);
+    @include hover-active;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include border-button($color-item);
+      color: $color-item;
+    }
+  }
+
+}
+
+.reserved {
+  .button__reserved {
+    align-self: center;
+  }
+}

@@ -1,0 +1,58 @@
+.lunch {
+  padding: 1rem;
+
+  @include respond-to('large') {
+    max-width: 55vw;
+    margin: 1rem auto;
+  }
+
+  &__time {
+    display: block;
+    font-size: 1rem;
+  }
+
+  &__option {
+    margin: 1rem auto;
+    font-weight: 600;
+    text-align: center;
+
+  }
+}
+
+.dishes {
+  @include display-grid-col(1fr 1fr);
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+
+  &__header,
+  &__price {
+    text-transform: uppercase;
+    color: $color-item;
+    font-weight: 600;
+  }
+
+  &__price {
+    text-align: end;
+    font-size: 2em;
+  }
+
+  &__weight {
+    display: block;
+    @include text-size(0.7rem, 300);
+  }
+
+  &__title {
+    @include align-center;
+    padding: 0.4rem;
+
+    &:nth-child(2n) {
+      border-left: 3px solid $color-item;
+    }
+  }
+
+  &:last-child {
+    :last-child {
+      grid-column: span 2;
+    }
+  }
+}

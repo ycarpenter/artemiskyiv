@@ -9,6 +9,10 @@ body {
   @include size(minmax(100vw, 100vh));
   @include cover-bg;
 
+  &:not(:first-child) {
+    padding-top: 1rem;
+  }
+
   &__title {
     @include text-size(2rem, 400);
     text-align: center;

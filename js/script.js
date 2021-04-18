@@ -1,5 +1,7 @@
 'use strict'
-
+// ===============
+// burger menu
+// ===============
 const navButton = document.getElementById('navBtn');
 navButton.addEventListener('click', showMenu);
 
@@ -7,7 +9,13 @@ function showMenu() {
   const burgerMenu = document.getElementById('nav');
   burgerMenu.classList.toggle('toggleMenu');
 };
+// ===============
+// end burger menu
+// ===============
 
+// ====================
+// button on home page
+// ====================
 const menuBtn = document.querySelector('.button__menu');
 menuBtn.addEventListener('click', function () {
   location.href = "#section-menu"
@@ -17,6 +25,15 @@ const reservedBtn = document.querySelector(".button__reserved");
 reservedBtn.addEventListener('click', function () {
   location.href = "#reserved"
 });
+
+// ====================
+// end button on home page
+// ====================
+
+
+// ===============
+// menu 
+// ===============
 
 // item txt
 const menu = [{
@@ -301,7 +318,7 @@ const menu = [{
   }
 ]
 
-const menuContainer = document.querySelector('.menu__container')
+const menuContainer = document.querySelector('.menu__container');
 const menuButtons = document.querySelector('.menu__buttons');
 
 // load items
@@ -361,6 +378,10 @@ function displayMenuButtons() {
     });
   });
 }
+// ===============
+// end menu 
+// ===============
+
 
 // ===================
 // button back to top
@@ -380,4 +401,123 @@ scroll.addEventListener('click', function () {
 
 // ======================
 // end button back to top
+// ======================
+
+// ======================
+// hookah menu
+// ======================
+const hookah = [{
+    "id": 1100,
+    "title": "Serbetli",
+    "category": "STANDART",
+    "price": 200
+  },
+  {
+    "id": 1101,
+    "title": "Alfakher",
+    "category": "STANDART",
+    "price": 200
+  },
+  {
+    "id": 1102,
+    "title": "Buta",
+    "category": "STANDART",
+    "price": 200
+  },
+  {
+    "id": 1103,
+    "title": "Fumari",
+    "category": "PREMIUM",
+    "price": 250
+  },
+  {
+    "id": 1104,
+    "title": "Dark Side",
+    "category": "PREMIUM",
+    "price": 300
+  },
+  {
+    "id": 1105,
+    "title": "Tangiers",
+    "category": "PREMIUM",
+    "price": 350
+  },
+  {
+    "id": 1106,
+    "title": "Starbuzz",
+    "category": "PREMIUM",
+    "price": 250
+  },
+  {
+    "id": 1107,
+    "title": "Grapefruit",
+    "category": "BOWL & LIQUID",
+    "price": 75
+  },
+  {
+    "id": 1108,
+    "title": "Orange",
+    "category": "BOWL & LIQUID",
+    "price": 75
+  },
+  {
+    "id": 1109,
+    "title": "Juice",
+    "category": "BOWL & LIQUID",
+    "price": 30
+  },
+  {
+    "id": 1110,
+    "title": "Milk",
+    "category": "BOWL & LIQUID",
+    "price": 30
+  },
+  {
+    "id": 1111,
+    "title": "Wine",
+    "category": "BOWL & LIQUID",
+    "price": 60
+  },
+  {
+    "id": 1112,
+    "title": "Absinthe",
+    "category": "BOWL & LIQUID",
+    "price": 110
+  },
+  {
+    "id": 1113,
+    "title": "Mojito",
+    "category": "BOWL & LIQUID",
+    "price": 45
+  },
+  {
+    "id": 1114,
+    "title": "Liquor",
+    "category": "BOWL & LIQUID",
+    "price": 90
+  }
+]
+
+const menuHookah = document.querySelector('.hookah__container');
+
+window.addEventListener("DOMContentLoaded", function () {
+  displayHookahItems(hookah);
+});
+
+function displayHookahItems(hookahItems) {
+  let displayHookah = hookahItems.map(function (item) {
+    return `<article class="hookah__item">
+          <h3 class="menu__title">${item.title}</h3>
+          <div class="divide-bottom"></div>
+          <h3 class="menu__price"> ${
+            item.price + " &#8372"}</h3>
+        </article>`;
+  })
+  displayHookah = displayHookah.join("");
+  menuHookah.innerHTML = displayHookah;
+}
+
+
+// ======================
+// hookah menu
 // ======================

@@ -1,0 +1,21 @@
+.hookah {
+
+
+  &__container {
+    margin: 0 25vw;
+
+    @include respond-to('medium') {
+      margin: 0 10vw;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__item {
+    @include flex(space-around);
+    margin-bottom: 0.4rem;
+
+  }
+}

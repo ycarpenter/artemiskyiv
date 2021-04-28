@@ -87,7 +87,7 @@ body {
   height: minmax(100vw, 100vh);
 }
 .section:nth-child(odd) {
-  background: black url("../img/hallBgBw.png") no-repeat center;
+  background: black url("../img/hallBgBw.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }

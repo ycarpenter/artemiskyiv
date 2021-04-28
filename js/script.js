@@ -9,6 +9,7 @@ function showMenu() {
   const burgerMenu = document.getElementById('nav');
   burgerMenu.classList.toggle('toggleMenu');
 };
+
 // ===============
 // end burger menu
 // ===============

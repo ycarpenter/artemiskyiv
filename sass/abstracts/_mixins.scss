@@ -19,7 +19,7 @@
 @mixin flex($justify) {
   display: flex;
   justify-content: $justify;
-  align-items: center;
+  // align-items: center;
 }
 
 @mixin center {
@@ -48,7 +48,7 @@
     font-size: 1.2rem;
     font-weight: 900;
     margin-left: 0.5rem;
-    color: #d6197e;
+    color: rgb(240, 0, 128);
   }
 }
 

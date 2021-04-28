@@ -2,7 +2,7 @@
   display: block;
   width: 4rem;
   height: 0.1rem;
-  background-color: #d7197e;
+  background-color: #f00080;
   margin: 1rem auto;
 }
 
@@ -112,17 +112,36 @@ a {
   padding: 0.2rem;
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("../../fonts/sourcesansproextralight.woff2") format("woff2"), url("../../fonts/sourcesansproextralight.woff") format("woff"), url("../../fonts/sourcesansproextralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("../../fonts/sourcesanspro.woff2") format("woff2"), url("../../fonts/sourcesanspro.woff") format("woff"), url("../../fonts/sourcesanspro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("../../fonts/sourcesansprosemibold.woff2") format("woff2"), url("../../fonts/sourcesansprosemibold.woff") format("woff"), url("../../fonts/sourcesansprosemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 .footer__contact {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: absolute;
   width: 100vw;
   padding: 1.5vh;
@@ -160,7 +179,7 @@ a {
   cursor: pointer;
 }
 .nav__link:hover, .nav__link:active {
-  color: #d7197e;
+  color: #f00080;
 }
 @media (min-width: 48em) {
   .nav__link::after {
@@ -168,7 +187,7 @@ a {
     font-size: 1.2rem;
     font-weight: 900;
     margin-left: 0.5rem;
-    color: #d6197e;
+    color: #f00080;
   }
 }
 @media (min-width: 48em) {
@@ -204,14 +223,12 @@ a {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-direction: column;
 }
 .reserved__form {
   width: 50vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin: 0 auto;
   padding: 1.3rem 0;
@@ -266,11 +283,11 @@ input {
 }
 .dishes__header, .dishes__price {
   text-transform: uppercase;
-  color: #d7197e;
+  color: #f00080;
   font-weight: 600;
 }
 .dishes__price {
-  text-align: end;
+  text-align: right;
   font-size: 2em;
 }
 .dishes__weight {
@@ -284,7 +301,7 @@ input {
   padding: 0.4rem;
 }
 .dishes__title:nth-child(2n) {
-  border-left: 3px solid #d7197e;
+  border-left: 3px solid #f00080;
 }
 .dishes:last-child :last-child {
   grid-column: span 2;
@@ -301,13 +318,11 @@ input {
 .menu__buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 .menu header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   align-items: unset;
 }
 .menu__container {
@@ -336,7 +351,7 @@ input {
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
-  color: #d7197e;
+  color: #f00080;
 }
 @media (max-width: 47.99em) {
   .menu__price {
@@ -354,7 +369,7 @@ input {
 }
 
 .divide-bottom {
-  border-bottom: 1px dashed #d7197e;
+  border-bottom: 1px dashed #f00080;
   flex-grow: 1;
   margin: 0.11rem 0.3rem;
 }
@@ -373,7 +388,6 @@ input {
 .hookah__item {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 0.4rem;
 }
 
@@ -382,7 +396,7 @@ input {
   font-weight: 600;
   padding: 0.3rem;
   color: white;
-  background-color: #d7197e;
+  background-color: #f00080;
   width: fit-content;
 }
 .button__menu {
@@ -391,13 +405,12 @@ input {
   border: 2px solid white;
 }
 .button__reserved {
-  background-color: #d7197e;
+  background-color: #f00080;
   border: none;
 }
 .button__wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-row: 8/9;
 }
 .button:hover, .button:focus, .button:active {
@@ -419,8 +432,8 @@ input {
 }
 .button__filter:hover, .button__filter:focus, .button__filter:active {
   background: transparent;
-  border: 2px solid #d7197e;
-  color: #d7197e;
+  border: 2px solid #f00080;
+  color: #f00080;
 }
 
 .reserved .button__reserved {
@@ -474,7 +487,7 @@ h1 {
 
 .contact__link {
   display: block;
-  color: #d7197e;
+  color: #f00080;
   width: fit-content;
   text-align: center;
   align-items: center;

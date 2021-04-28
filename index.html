@@ -22,7 +22,6 @@
   <title>ARTEMIS restaurant</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -142,31 +141,31 @@
       <form action="form.php" method="POST" class="reserved__form" id="reserved" name="EmeilForm" autocomplete="off">
         <h2 class="section__title">Бронювання столика</h2>
         <p>
-          <label for="date"></label>
+          <label for="date">Дата:</label>
           <input type="date" name="date" id="date" min="2021-04-09" max="2021-12-31" class="reservaionInput" required>
         </p>
         <p>
-          <label for="time"></label>
+          <label for="time">Час:</label>
           <input type="time" name="time" id="time" class="reservationInput" required>
         </p>
         <p>
-          <label for="person"></label>
+          <label for="person">Кількість гостей:</label>
           <input type="number" name="person" id="person" min="1" max="30" class="reservationInput"
-            placeholder="К-сть гостей" required>
+            placeholder="Введіть кількість гостей" required>
         </p>
         <p>
-          <label for="firstName"></label>
-          <input type="text" name="firstName" id="firstName" class="reservaionInput" placeholder="Ім'я та Прізвище"
-            required>
+          <label for="firstName">Ім'я та Прізвище:</label>
+          <input type="text" name="firstName" id="firstName" class="reservaionInput"
+            placeholder="Введіть Ім'я та Прізвище" required>
         </p>
         <p>
-          <label for="phone"></label>
+          <label for="phone">Номер телефону:</label>
           <input type="tel" name="phone" id="phone" class="reservaionInput" placeholder="+380XXXXXXXXX"
             title="Введіть номер телефону у форматі +380XXXXXXXXX"
             pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}{0,1}\d{2}{0,1}\d{2}" required>
         </p>
         <p>
-          <label for="email"></label>
+          <label for="email">Електронна пошта:</label>
           <input type="email" name="email" id="email" placeholder="E-mail" class="reservationInput">
         </p>
 

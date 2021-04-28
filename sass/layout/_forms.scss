@@ -3,6 +3,7 @@
   @include flex(space-around);
   flex-direction: column;
 
+
   &__form {
     width: 50vw;
     @include flex(center);

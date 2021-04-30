@@ -1,0 +1,33 @@
+@include keyframe(bounce) {
+
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-1rem);
+  }
+
+  80% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+@include keyframe(zoomIn) {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow: $color-item 0 0 1rem,
+      $color-item 0 0 1.5rem,
+      $color-item 0 0 2rem,
+      $color-item 0 0 2.5rem,
+      $color-item 0 0 3.5rem;
+  }
+}

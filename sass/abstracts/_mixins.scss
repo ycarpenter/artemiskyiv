@@ -79,30 +79,18 @@
   font-weight: $weight;
 }
 
-@mixin animation {
-
-  &:hover,
-  &:active {
-    animation: bounce 1s;
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
   }
+}
 
-  @keyframes bounce {
-
-    0%,
-    20%,
-    60%,
-    100% {
-      transform: translateY(0);
-    }
-
-    40% {
-      transform: translateY(-1rem);
-    }
-
-    80% {
-      transform: translateY(-0.5rem)
-    }
-  }
+@mixin animation ($animation, $duration, $delay, $direction: forwards, $fiilmode: forwards) {
+  animation-name: $animation;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-direction: $direction;
+  animation-fill-mode: $fiilmode;
 }
 
 .small__border {

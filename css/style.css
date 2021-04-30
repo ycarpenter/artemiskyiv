@@ -6,6 +6,27 @@
   margin: 1rem auto;
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  80% {
+    transform: translateY(-0.5rem);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: #f00080 0 0 1rem, #f00080 0 0 1.5rem, #f00080 0 0 2rem, #f00080 0 0 2.5rem, #f00080 0 0 3.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -477,6 +498,11 @@ h1 {
   align-items: center;
   grid-row: 2/7;
   align-self: end;
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-fill-mode: both;
 }
 @media (min-width: 48em) {
   h1 {
@@ -501,19 +527,13 @@ h1 {
   height: fit-content;
   display: inline-block;
 }
-.social__link:hover, .social__link:active {
-  animation: bounce 1s;
-}
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-1rem);
-  }
-  80% {
-    transform: translateY(-0.5rem);
-  }
+.social__link:hover,
+.social__link :active {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

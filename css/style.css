@@ -498,10 +498,15 @@ h1 {
   align-items: center;
   grid-row: 2/7;
   align-self: end;
+  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-delay: 0;
   animation-delay: 0;
+  -webkit-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 @media (min-width: 48em) {
@@ -529,10 +534,15 @@ h1 {
 }
 .social__link:hover,
 .social__link :active {
+  -webkit-animation-name: bounce;
   animation-name: bounce;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-delay: 0;
   animation-delay: 0;
+  -webkit-animation-direction: forwards;
   animation-direction: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 

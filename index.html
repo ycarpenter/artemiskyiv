@@ -145,36 +145,42 @@
     </section>
 
     <section class="section reserved">
-      <form action="form.php" method="POST" class="reserved__form" id="reserved" name="EmeilForm" autocomplete="off">
+
+      <!-- modal reserved -->
+
+
+
+
+      <form action="form.php" method="POST" class="reserved__form" id="reserved" autocomplete="off">
         <h2 class="section__title">Бронювання столика</h2>
-        <p>
+        <fieldset title="Введіть заплановану дату">
           <label for="date">Дата:</label>
-          <input type="date" name="date" id="date" min="2021-04-09" max="2021-12-31" class="reservaionInput" required>
-        </p>
-        <p>
+          <input type="date" name="date" id="date" min="2021-04-09" max="2021-12-31" class="reserved__input" required>
+        </fieldset>
+        <fieldset title="Введіть запланований час">
           <label for="time">Час:</label>
-          <input type="time" name="time" id="time" class="reservationInput" required>
-        </p>
-        <p>
+          <input type="time" name="time" id="time" class="reserved__input" required>
+        </fieldset>
+        <fieldset title="Введіть кількість гостей">
           <label for="person">Кількість гостей:</label>
-          <input type="number" name="person" id="person" min="1" max="30" class="reservationInput"
+          <input type="number" name="person" id="person" min="1" max="30" class="reserved__input"
             placeholder="Введіть кількість гостей" required>
-        </p>
-        <p>
+        </fieldset>
+        <fieldset title="Введіть ім'я та прізвище">
           <label for="firstName">Ім'я та Прізвище:</label>
-          <input type="text" name="firstName" id="firstName" class="reservaionInput"
+          <input type="text" name="firstName" id="firstName" class="reserved__input"
             placeholder="Введіть Ім'я та Прізвище" required>
-        </p>
-        <p>
+        </fieldset>
+        <fieldset title="Введіть номер телефону у форматі +380XXXXXXXXX">
           <label for="phone">Номер телефону:</label>
-          <input type="tel" name="phone" id="phone" class="reservaionInput" placeholder="+380XXXXXXXXX"
+          <input type="tel" name="phone" id="phone" class="reserved__input" placeholder="+380XXXXXXXXX"
             title="Введіть номер телефону у форматі +380XXXXXXXXX"
             pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}{0,1}\d{2}{0,1}\d{2}" required>
-        </p>
-        <p>
+        </fieldset>
+        <fieldset title="Введіть електронну пошту">
           <label for="email">Електронна пошта:</label>
-          <input type="email" name="email" id="email" placeholder="E-mail" class="reservationInput">
-        </p>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="reserved__input">
+        </fieldset>
 
         <button type="submit" value="submit" class="button button__reserved">Забронювати!</button>
 
@@ -187,9 +193,6 @@
           <a href="tel:+380979997539" class="link">
             097 999 7539</a></p>
       </div>
-
-      <!-- modal reserved -->
-
     </section>
 
     <section class="section menu" id="section-menu">

@@ -86,10 +86,19 @@
 }
 
 @mixin animation ($animation, $duration, $delay, $direction: forwards, $fiilmode: forwards) {
+  -webkit-animation-name: $animation;
   animation-name: $animation;
+
+  -webkit-animation-duration: $duration;
   animation-duration: $duration;
+
+  -webkit-animation-delay: $delay;
   animation-delay: $delay;
+
+  -webkit-animation-direction: $direction;
   animation-direction: $direction;
+
+  -webkit-animation-fill-mode: $fiilmode;
   animation-fill-mode: $fiilmode;
 }
 

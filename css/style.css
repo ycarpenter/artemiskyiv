@@ -166,6 +166,7 @@ a {
   position: absolute;
   width: 100vw;
   padding: 1.5vh;
+  z-index: 1;
 }
 
 .logo__img {
@@ -502,12 +503,12 @@ h1 {
   animation-name: zoomIn;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 48em) {
   h1 {
@@ -538,8 +539,8 @@ h1 {
   animation-name: bounce;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-direction: forwards;
   animation-direction: forwards;
   -webkit-animation-fill-mode: forwards;

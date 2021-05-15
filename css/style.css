@@ -261,13 +261,16 @@ a {
     width: 80vw;
   }
 }
+.reserved__input {
+  width: 39vw;
+  margin: 0.5rem auto;
+}
 .reserved__desc {
   margin: 1rem 0;
 }
 
 input {
   background-color: black;
-  min-width: 39vw;
   height: 4vh;
   margin: 2vh 0;
   color: #9a9393;
@@ -276,6 +279,11 @@ input {
   input {
     min-width: 60vw;
   }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
 }
 
 .lunch {

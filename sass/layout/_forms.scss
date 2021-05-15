@@ -17,6 +17,11 @@
     }
   }
 
+  &__input {
+    width: 39vw;
+    margin: 0.5rem auto;
+  }
+
   &__desc {
     margin: 1rem 0;
   }
@@ -24,7 +29,6 @@
 
 input {
   background-color: $bg-color;
-  min-width: 39vw;
   height: 4vh;
   margin: 2vh 0;
   color: $input-placeholder;
@@ -32,4 +36,9 @@ input {
   @include respond-to(medium) {
     min-width: 60vw;
   }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
 }

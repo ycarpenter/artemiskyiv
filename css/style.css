@@ -120,7 +120,7 @@ body {
 .section:nth-child(odd) {
   background: black url("../img/hallBgBw.webp") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .section:not(:first-child) {

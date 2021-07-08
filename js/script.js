@@ -3,12 +3,27 @@
 // burger menu
 // ===============
 const navButton = document.getElementById('navBtn');
-navButton.addEventListener('click', showMenu);
+const burgerMenu = document.getElementById('nav');
+const navMenu = document.getElementById('nav-menu');
 
-function showMenu() {
-  const burgerMenu = document.getElementById('nav');
-  burgerMenu.classList.toggle('toggleMenu');
+function closeMenu() {
+  burgerMenu.classList.remove('toggleMenu');
 };
+
+navButton.addEventListener('click', () => {
+  burgerMenu.classList.toggle('toggleMenu');
+});
+
+navMenu.addEventListener('click', event => {
+  const target = event.target;
+  if (target.classList.contains('nav__link')) {
+    closeMenu();
+  };
+});
+
+
+
+
 // ===============
 // end burger menu
 // ===============

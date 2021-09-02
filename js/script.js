@@ -8,7 +8,7 @@ const navMenu = document.getElementById('nav-menu');
 
 function closeMenu() {
   burgerMenu.classList.remove('toggleMenu');
-};
+}
 
 navButton.addEventListener('click', () => {
   burgerMenu.classList.toggle('toggleMenu');
@@ -18,7 +18,7 @@ navMenu.addEventListener('click', event => {
   const target = event.target;
   if (target.classList.contains('nav__link')) {
     closeMenu();
-  };
+  }
 });
 
 

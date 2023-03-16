@@ -36,6 +36,14 @@ input {
   @include respond-to(medium) {
     min-width: 60vw;
   }
+
+  &:focus,
+  &:active {
+    font-size: 1.3rem;
+    outline: none;
+    color: $color-white;
+    box-shadow: 4px 4px 8px 0px rgb(255 255 255);
+  }
 }
 
 fieldset {

@@ -10,7 +10,7 @@ body {
   @include cover-bg;
 
   &:not(:first-child) {
-    padding-top: 1rem;
+    padding: 1rem 5rem;
   }
 
   &__title {

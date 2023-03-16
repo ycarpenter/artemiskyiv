@@ -43,3 +43,10 @@ h1 {
     }
   }
 }
+
+.poster {
+  &__item {
+    @include flex(space-between);
+    padding: 0.5rem 0;
+  }
+}
